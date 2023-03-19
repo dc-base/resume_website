@@ -37,7 +37,6 @@ func chadHdlr(w http.ResponseWriter, r *http.Request){
 	fmt.Fprintf(w, "\t\t<title>I am normal</title>")
 	fmt.Fprintf(w, "\t\t\t<img src='media/test.jpg' alt='fail' style='width:600px;height:600px;'>")
 	fmt.Fprintf(w, "\t\t\t<strong>surprisingly im not high</strong>")
-	//fmt.Fprintf(w, "\t\t\t<img src='media/retard.jpg' alt='fail'>")
 	fmt.Fprintf(w, "\t<head/>")
 	fmt.Fprintf(w, "<html>")
 
@@ -80,7 +79,6 @@ func main() {
 	//	fmt.Fprintf(w, "Req for about page")
 	//})
 	//fs := http.FileServer(http.Dir("./media"))
-	//http.Handle("/retard.jpg", http.FileServer(http.Dir("./")))
 	mux := http.NewServeMux()
 	server := http.Server{
 		Addr: fmt.Sprintf(":%d", port),
